@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication3;
+package com.mx.tris.facade;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -17,7 +17,7 @@ import java.util.Scanner;
  *
  * @author MXI01020253A
  */
-public class JavaApplication3 {
+public class TrisMain {
 
     /**
      * @param args the command line arguments
