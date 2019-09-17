@@ -11,7 +11,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 /**
  *
@@ -32,6 +31,10 @@ public class TrisMain {
         procesarLista(listaCadenas);
     }
     
+    /**
+     * Metodo procesarLista
+     * @param listaCadenas {@code List<String>}
+     */
     public static void procesarLista(List<String> listaCadenas){
         for(int i = 1; i <= 5; i = i + 1){
                 //System.out.println("indice: " + i);
@@ -72,7 +75,7 @@ public class TrisMain {
       String cadena;
       FileReader f = new FileReader(archivo);
       BufferedReader b = new BufferedReader(f);
-      List<String> listaCadenas = new ArrayList<String>();
+      List<String> listaCadenas = new ArrayList<>();
       while((cadena = b.readLine())!=null) {
           //System.out.println(cadena);
           listaCadenas.add(cadena);
