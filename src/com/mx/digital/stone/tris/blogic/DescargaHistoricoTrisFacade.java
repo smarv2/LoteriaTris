@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mx.tris.facade;
+package com.mx.digital.stone.tris.blogic;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -11,6 +11,7 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
+import org.apache.log4j.Logger;
 
 /**
  *
@@ -18,12 +19,14 @@ import java.net.URL;
  */
 public class DescargaHistoricoTrisFacade {
     
+    protected static final Logger LOG = Logger.getLogger(DescargaHistoricoTrisFacade.class);
+    
         public void DescargaHistorico(){
-            System.out.println("** Inicia descarga de archivo con historicos **");
+            LOG.info("** Inicia descarga de archivo con historicos **");
             try {    
             
-                //URL url2 = new URL("https://www.pronosticos.gob.mx/Documentos/Historicos/Tris.csv");
-                URL url2 = new URL("");
+                URL url2 = new URL("https://www.pronosticos.gob.mx/Documentos/Historicos/Tris.csv");
+                //URL url2 = new URL("");
                 InputStream in = new BufferedInputStream(url2.openStream());
                 OutputStream out = new BufferedOutputStream(new FileOutputStream("tris.csv"));
 
@@ -34,11 +37,9 @@ public class DescargaHistoricoTrisFacade {
                 out.close();
         
             } catch (Exception e) {
-                System.err.println("error al descargar el archivo historico: " + e);
+                LOG.error("error al descargar el archivo historico: " + e);
             }   
-            System.out.println("** Termina descarga de archivo con historicos **");
+            LOG.info("** Termina descarga de archivo con historicos **");
         }
-    
-
     
 }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mx.tris.vo;
+package com.mx.digital.stone.tris.vo;
 
 import java.io.Serializable;
 

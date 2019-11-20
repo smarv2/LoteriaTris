@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration PUBLIC "-//log4j/log4j Configuration//EN" "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%-5p] [%d{dd/MMM/yyyy HH:mm}] [%C.%M] (%F:%L) - %m%n" />
+		</layout>
+	</appender>
+	<appender name="ARCHIVO" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="/tmp/logLoteriaTris.log" />
+		<param name="MaxFileSize" value="5MB" />
+		<param name="MaxBackupIndex" value="5" />
+		<layout class="org.apache.log4j.PatternLayout">
+                    <param name="ConversionPattern" value="%-5p: %d{dd MMM yyyy HH:mm:ss,SSS} %m%n" />
+		</layout>
+	</appender>
+
+	<!-- for all other loggers log only debug and above log messages -->
+	<root>
+		<priority value="INFO" />
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="ARCHIVO" />
+	</root>
+</log4j:configuration>
