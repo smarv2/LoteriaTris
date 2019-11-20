@@ -25,7 +25,7 @@ public class TrisMainFacade {
         LOG.info("*** Inicia proceso principal ***");
         
         boolean mostrarDetalles = false;
-        mostrarDetalles = true;        
+        //mostrarDetalles = true;        
         //Descarga historico
         DescargaHistoricoTrisFacade descargaHistoricoTrisFacade = new DescargaHistoricoTrisFacade();
         descargaHistoricoTrisFacade.DescargaHistorico();

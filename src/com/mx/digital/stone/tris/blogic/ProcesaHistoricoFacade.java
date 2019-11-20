@@ -222,8 +222,8 @@ public class ProcesaHistoricoFacade {
                 }
             }
         }
-        LOG.info("*** LA COMBINACION MAS PROBABLE ES: " + numeroMasProbable + " ***");
-        LOG.info("*** LA COMBINACION MENOS PROBABLE ES: " + numeroMenosProbable + " ***");
+        LOG.info("+++ LA COMBINACION  MAS  PROBABLE ES: " + numeroMasProbable + " +++");
+        LOG.info("--- LA COMBINACION MENOS PROBABLE ES: " + numeroMenosProbable + " ---");
     }
     
     
