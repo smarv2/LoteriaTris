@@ -11,7 +11,8 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  *
@@ -19,7 +20,7 @@ import org.apache.log4j.Logger;
  */
 public class DescargaHistoricoTrisFacade {
     
-    protected static final Logger LOG = Logger.getLogger(DescargaHistoricoTrisFacade.class);
+    protected static final Logger LOG = LogManager.getLogger(DescargaHistoricoTrisFacade.class);
     
         public void DescargaHistorico(){
             LOG.info("** Inicia descarga de archivo con historicos **");

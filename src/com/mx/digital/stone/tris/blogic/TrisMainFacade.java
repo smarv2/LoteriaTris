@@ -6,7 +6,8 @@
 package com.mx.digital.stone.tris.blogic;
 
 import java.io.IOException;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  *
@@ -14,7 +15,7 @@ import org.apache.log4j.Logger;
  */
 public class TrisMainFacade {
     
-    protected static final Logger LOG = Logger.getLogger(TrisMainFacade.class);
+    protected static final Logger LOG = LogManager.getLogger(TrisMainFacade.class);
 
     /**
      * @param args the command line arguments
