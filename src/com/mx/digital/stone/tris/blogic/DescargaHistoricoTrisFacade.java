@@ -8,6 +8,7 @@ package com.mx.digital.stone.tris.blogic;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
@@ -16,7 +17,7 @@ import org.apache.logging.log4j.Logger;
 
 /**
  *
- * @author smarv
+ * @author Mario Ramirez
  */
 public class DescargaHistoricoTrisFacade {
     
@@ -37,7 +38,7 @@ public class DescargaHistoricoTrisFacade {
                 in.close();
                 out.close();
         
-            } catch (Exception e) {
+            } catch (IOException e) {
                 LOG.error("error al descargar el archivo historico: " + e);
             }   
             LOG.info("** Termina descarga de archivo con historicos **");

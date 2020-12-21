@@ -11,7 +11,7 @@ import org.apache.logging.log4j.Logger;
 
 /**
  *
- * @author MXI01020253A
+ * @author Mario Ramirez
  */
 public class TrisMainFacade {
     
